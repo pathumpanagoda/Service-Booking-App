@@ -61,7 +61,9 @@ export const BookingScreen = () => {
   };
   return (
     <View style={styles.container}>
+      <Text style={styles.headerTitle}>Messages</Text>
       <View style={styles.header}>
+      
         {['Active', 'Success', 'Cancelled'].map((tab) => (
           <TouchableOpacity
             key={tab}
@@ -141,10 +143,17 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     backgroundColor: '#FFFFFF',
-    paddingTop: 60,
+    paddingTop: 30,
     paddingBottom: 16,
     borderBottomWidth: 1,
     borderBottomColor: '#E5E5E5',
+  },
+  headerTitle: {
+    marginVertical: 16,
+    marginTop: 60,
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#333',
   },
   tab: {
     paddingHorizontal: 16,

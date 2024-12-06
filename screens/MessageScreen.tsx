@@ -66,7 +66,7 @@ export const MessageScreen = () => {
     <View style={styles.container}>
       {/* Header */}
       <View style={styles.header}>
-        <Ionicons name="arrow-back" size={24} color="black" />
+       
         <Text style={styles.headerTitle}>Messages</Text>
         <View style={styles.headerIcons}>
           <Ionicons name="search-outline" size={24} color="black" style={styles.icon} />

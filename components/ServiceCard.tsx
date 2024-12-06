@@ -11,9 +11,11 @@ export const ServiceCard = ({ image, title, price }: ServiceCardProps) => {
   return (
     <View style={styles.card}>
       <Image source={{ uri: image }} style={styles.image} />
+      <View style={{ padding: 8 }} >
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.subtitle}>Service at Home</Text>
       <Text style={styles.price}>Start at ${price}</Text>
+      </View>
     </View>
   );
 };
@@ -21,20 +23,21 @@ export const ServiceCard = ({ image, title, price }: ServiceCardProps) => {
 const styles = StyleSheet.create({
   card: {
     backgroundColor: 'white',
-    borderRadius: 12,
-    padding: 12,
+    borderRadius: 8,
+    padding: 0,
     marginRight: 16,
-    width: Dimensions.get('window').width * 0.6,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 3,
+    width: Dimensions.get('window').width * 0.5,
+    borderColor: '#F0F0F0',
+    borderWidth: 2,
+   
   },
   image: {
     width: '100%',
     height: 120,
-    borderRadius: 8,
+    borderTopLeftRadius: 8,
+    borderTopRightRadius: 8,
+
+  
   },
   title: {
     fontSize: 16,
