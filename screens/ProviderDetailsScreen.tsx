@@ -83,11 +83,11 @@ const styles = StyleSheet.create({
   },
   image: {
     width: '100%',
-    height: 250,
+    height: 300,
   },
   backButton: {
     position: 'absolute',
-    top: 40,
+    top: 60,
     left: 16,
     backgroundColor: '#00000080',
     padding: 8,
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
   },
   favoriteButton: {
     position: 'absolute',
-    top: 40,
+    top: 60,
     right: 16,
     backgroundColor: '#00000080',
     padding: 8,

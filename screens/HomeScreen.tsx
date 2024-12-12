@@ -14,12 +14,9 @@ import { ServiceIcon } from "../components/ServiceIcon";
 import { ServiceCard } from "../components/ServiceCard";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import Img1 from "../assets/banner.png";
-import { createStackNavigator } from "react-navigation-stack";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import ProviderDetails from './ProviderDetailsScreen';
 import { useNavigation } from "@react-navigation/native";
 
-
-const Tab = createBottomTabNavigator();
 
 
 const serviceProviders = [
@@ -70,8 +67,8 @@ const serviceProviders = [
   },
 ];
 
-export const HomeScreen = () => {
-  const navigation = useNavigation();
+export const HomeScreen = ({navigation}) => {
+  // const navigation = useNavigation();
   return (
     <ScrollView style={styles.container}>
       {/* Header */}
