@@ -13,8 +13,8 @@ import { Ionicons } from "@expo/vector-icons";
 import { ServiceIcon } from "../components/ServiceIcon";
 import { ServiceCard } from "../components/ServiceCard";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
-import Img1 from "../assets/banner.png";
-import ProviderDetails from './ProviderDetailsScreen';
+// import Img1 from "../assets/banner.png";
+// import ProviderDetails from './ProviderDetailsScreen';
 import { useNavigation } from "@react-navigation/native";
 
 
@@ -67,8 +67,8 @@ const serviceProviders = [
   },
 ];
 
-export const HomeScreen = ({navigation}) => {
-  // const navigation = useNavigation();
+export const HomeScreen = () => {
+  const navigation = useNavigation();
   return (
     <ScrollView style={styles.container}>
       {/* Header */}
@@ -99,7 +99,7 @@ export const HomeScreen = ({navigation}) => {
 
       {/* Banner */}
       <View style={styles.bannerContainer}>
-        <Image source={Img1} style={styles.banner} />
+        {/* <Image source={Img1} style={styles.banner} /> */}
       </View>
 
       {/* Services */}
@@ -151,7 +151,7 @@ export const HomeScreen = ({navigation}) => {
               <TouchableOpacity
                 key={provider.id}
                 style={styles.providerCard}
-                onPress={() =>navigation.navigate("ProviderDetails", { provider })}
+                // onPress={() =>navigation.navigate("ProviderDetails",  provider )}
               >
                 <Image
                   source={{ uri: provider.image }}
